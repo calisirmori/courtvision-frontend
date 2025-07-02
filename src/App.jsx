@@ -1,12 +1,5 @@
-import './App.css'
+import AppRouter from "./routes/AppRouter";
 
-function App() {
-  return (
-    <div style={{ textAlign: 'center', padding: '3rem' }}>
-      <h1>🏀 CourtVision Frontend (Vite)</h1>
-      <p>This is a fast dummy React app</p>
-    </div>
-  );
-}
+const App = () => <AppRouter />;
 
 export default App;
