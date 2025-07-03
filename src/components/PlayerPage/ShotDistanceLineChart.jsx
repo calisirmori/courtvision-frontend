@@ -22,8 +22,6 @@ const ShotDistanceLineChart = ({ shots = [] }) => {
             return;
         }
 
-        console.log(shots)
-
         // Bin shots into distance intervals
         const bins = d3
             .bin()

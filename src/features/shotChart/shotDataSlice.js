@@ -7,7 +7,7 @@ export const fetchShotData = createAsyncThunk(
   "shotChart/fetchShotData",
   async (playerId) => {
     const response = await fetch(
-      `https://courtvision.moricalisir.com/api/shot-chart?playerId=${playerId}&season=${SEASON}`
+      `http://localhost:8080/shot-chart?playerId=${playerId}&season=${SEASON}`
     );
     if (!response.ok) {
       throw new Error("Failed to fetch shot data");
